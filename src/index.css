@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.background {
+  background: rgb(36,0,13);
+  background: linear-gradient(150deg, rgba(36,0,13,1) 0%, rgba(190,14,86,1) 35%, rgba(255,0,83,1) 100%);   
+}
+
+main {
+  height: 70vh;
+  padding: 25px;
+}
+
+@media (min-width: 550px) {
+  main {
+    width: 550px;
+    margin: 0 auto;
+  }
+}
+
+.suchfeld {
+ width: 100%; 
+ display: block;
+ padding: 15px;
+ border: none;
+ border-radius: 10px;
+ outline: none;
+ background-color: rgba(245,229,234,0.4);
+ box-shadow: 0px 10px 13px -7px #000000, -3px -7px 5px -11px rgba(0,0,0,0);
+}
+
+input::placeholder {
+  color: white;
+}
+
+.suchfeld:focus {
+  background-color: rgba(245,229,234,0.5); 
+  font-size: 1.25em;
+}
+
+.standort {
+  margin-top: 2em;
+  text-align: center;
+  font-size: 1.5em;
+  color: rgb(253,245,230);
+  text-shadow: 0 .8px gray;
+}
+
+.date {
+  text-align: center;
+  padding: .8em;
+  font-style: italic;
+  color: rgb(253,245,230);
+  font-size: 0.8em;
+  margin-bottom: 1.5em;
+}
+
+.temperatur {
+  text-align: center;
+  font-size: 4em;
+  color: rgb(253,245,230);
+  background-color: rgb(253,245,230, 0.2);
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0.2em;
+  box-shadow: 0px 10px 13px -7px #000000, -3px -7px 5px -11px rgba(0,0,0,0);
+}
+
+.gefuehlteTemp {
+  font-size: 0.2em;
+}
+
+.wetter {
+  text-align: center;
+  font-size: 1em;
+  margin-top: 2em;
+  color: rgb(253,245,230);
+  text-shadow: 0 .8px gray;
+  font-weight: 600;
+}
+
+.footer,
+.header {
+  padding: 1em;
+  color: rgb(253,245,230);
+  height: 10vh;
+}
+
+.header {
+  text-align: center;
+  font-size: 2em;
+  height: 20vh;
+}
