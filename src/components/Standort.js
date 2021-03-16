@@ -12,12 +12,12 @@ function Standort() {
     }
 
     // Gibt aktuelles Datum aus
-    function getDatum() {
+    const getDatum = () => {
         var datum = new Date();
         // Gibt einen Wochentag und ein langes Datum zurück.
-        var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        var optionen = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
-        return `${datum.toLocaleDateString('de-DE', options)}`;
+        return `${datum.toLocaleDateString('de-DE', optionen)}`;
     }
 
     return (

@@ -9,8 +9,8 @@ function ContextProvider(props) {
 
     // Bei Start der App wird das Wetter für den aktuellen Standort automatisch angezeigt.
     useEffect(() => {
-        navigator.geolocation.getCurrentPosition(function getPosition(pos){
-            const koordinaten = pos.coords
+        navigator.geolocation.getCurrentPosition(function getPosition(pos) {
+            const koordinaten = pos.coords;
             fetch(`${wetterAPI.base}weather?lat=${koordinaten.latitude}&lon=${koordinaten.longitude}&units=metric&appid=${wetterAPI.key}&lang=de`)
             .then(response => response.json())
             .then(data => {

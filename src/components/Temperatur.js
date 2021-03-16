@@ -3,9 +3,10 @@ import {Context} from '../context';
 
 function Temperatur() {
     const context = useContext(Context);
+    // Wenn kein Ort gefunden wurde, werden drei Fragezeichen angezeigt.
     const renderWetterTemp = () => {
         if(!context.wetter.main) {
-            return '-';
+            return '???';
         } else {
             return `${Math.floor(context.wetter.main.temp)}°C`;
         }
