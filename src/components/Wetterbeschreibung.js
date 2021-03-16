@@ -11,7 +11,7 @@ function Wetterbeschreibung() {
             let icon = context.wetter.weather[0].icon;
             return  <div>
                         <p>{beschreibung}</p>
-                        <img src={'http://openweathermap.org/img/wn/' + icon + '@2x.png'} alt='Wetter-Icon' />
+                        <img src={'http://openweathermap.org/img/wn/' + icon + '@2x.png'} alt='Wetter-Icon' className="wetterIcon"/>
                     </div> 
         }
     }
