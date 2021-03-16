@@ -6,7 +6,7 @@ import Main from "./Main";
 
 function App() { 
     return (
-        <div className="background">
+        <div>
           <Header />
           <Main />
           <Footer />

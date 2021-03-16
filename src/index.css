@@ -6,10 +6,7 @@
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.background {
-  background: linear-gradient(150deg, rgba(36,0,13,1) 0%, rgba(190,14,86,1) 35%, rgba(255,0,83,1) 100%);   
+  background: linear-gradient(150deg, rgba(36,0,13,1) 0%, rgba(190,14,86,1) 35%, rgba(255,0,83,1) 100%);  
 }
 
 main {
@@ -103,7 +100,7 @@ input::placeholder {
 
 .footer,
 .header {
-  padding: 1em;
+  padding: 2em;
   color: rgb(253,245,230);
 }
 
